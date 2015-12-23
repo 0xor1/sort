@@ -23,7 +23,7 @@ func (s *sorter) Swap(i, j int) {
 }
 
 func Sort(len func() int, less func(i, j int) bool, swap func(i, j int)) {
-	sort.Sort(sorter{
+	sort.Sort(&sorter{
 		len,
 		less,
 		swap,
