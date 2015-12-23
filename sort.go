@@ -19,7 +19,7 @@ func (s *sorter) Less(i, j int) bool {
 }
 
 func (s *sorter) Swap(i, j int) {
-	return s.swap(i, j)
+	s.swap(i, j)
 }
 
 func Sort(len func() int, less func(i, j int) bool, swap func(i, j int)) {
